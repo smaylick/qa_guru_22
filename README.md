@@ -13,7 +13,7 @@
   ```bash
   appium --base-path /wb/hub
   ```
-5. ЗАпустить эмулятор через Android Studio
+5. Запустить эмулятор через Android Studio
 
 6. Для запусков тестов локально ввести команду
   ```bash
