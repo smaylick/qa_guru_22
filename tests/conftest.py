@@ -11,8 +11,8 @@ def pytest_addoption(parser):
     parser.addoption(
         "--context",
         required=False,
-        default="local",
-        choices=['local', 'bs'],
+        default="local_real",
+        choices=['bs', 'local_real', 'local_emulator'],
     )
 
 
@@ -31,7 +31,6 @@ def android_mobile_management(context):
     from config import config
 
     options = config.to_driver_options(context=context)
-
 
     with allure.step('setup app session'):
         browser.config.driver = webdriver.Remote(

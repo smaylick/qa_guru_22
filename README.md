@@ -17,18 +17,22 @@
 
 6. Для запусков тестов локально ввести команду
   ```bash
-  pytest -sv tests/android_app/test_wikipedia.py --context='local'
+  pytest -m local_real
   ```
 7. Получение отчёта allure:
 ```bash
 allure serve allure-results
 ```
- 
+8. Для запуска тестов локально через эмулятор ввести команду
+  ```bash
+  pytest -m local_emulator
+  ```
+
 ### Локальный запуск автотестов на bs
 
 1. Выполнить
 ```bash
- pytest -sv tests/android_app/test_wikipedia.py --context='bs'
+  pytest -m bs
 ```
 2. Получение отчёта allure:
 ```bash
